@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        // let marks = [90, 80, 70, 60, 50]
+        // document.write("<br>Marks = ", marks)
+        // document.write("<br>Length of Marks = ", marks.length)
+
+        let heroes = ["Superman", "Batman", "Spiderman", "Ironman"]
+        document.write("<br>Heroes = ", heroes)
+        document.write("<br>Length of Heroes = ", heroes.length)
+        document.write("<br>First Hero is ", heroes[0])
+        for(let i = 0; i <heroes.length; i++){
+            document.write("<br>Hero ", heroes[i])
+        }
+
+        // find average of given array
+        let marks = [85, 97, 44, 37, 76, 60]
+        document.write("<br>Marks = ", marks)
+        document.write("<br>Length of marks = ", marks.length)
+        let sum = 0;
+        for(let i = 0; i <marks.length; i++){
+            document.write("<br>Marks: ", marks[i])
+            sum += marks[i];
+        }
+        let average = sum /marks.length
+        document.write("<br>Average of marks = ", average)
+
+ // array methods
+        let fruits = ["Apple", "Banana", "Mango", "Orange"]
+        document.write("<br>Fruits = ", fruits)
+
+        // Push method - add new element at the end of array
+        fruits.push("Grapes", "Pineapple")
+        document.write("<br>Fruits after push = ", fruits)  
+        
+        // Pop method - remove last element from array
+        fruits.pop()
+        document.write("<br>Fruits after pop = ", fruits)
+
+        // unshift method - add new element at the beginning of array
+        fruits.unshift("Strawberry", "Cranberry")
+        document.write("<br>Fruits after unshift = ", fruits)
+
+        // shift method - removes first element from array
+        fruits.shift()
+        document.write("<br>Fruits after shift = ", fruits)
+
+        let vegetables = ["tomato", "lemon", "onion"]
+        document.write("<br>Vegetables = ", vegetables)
+        // concat method - combine two arrays
+        let food = fruits.concat(vegetables)
+        document.write("<br>Food = ", food)
+
+        // slice method - returns a portion of an array
+        let slicedfood = food.slice(3, 7)
+        document.write("<br>Sliced food = ", slicedfood)
+
+        // spliced method - new element is deleted and new element is added at the given index
+        let splicedfood = food.splice(6, 3, "Papaya", "kiwi", "Watermelon")
+        document.write("<br>Food after splice = ", food)
+        document.write("<br>Spliced food = ", splicedfood)
+
+        /* Create an array to store companies (Bloomberg, Microsoft, Uber, Google, IBM, Netflix), then
+        a)Remove the first company of the array
+        b)Remove uber and add Ola in its place
+        c)Add amazon at the end
+        */
+
+        let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]
+        document.write("<br>Companies = ", companies)
+        // a) Remove the first company of the array
+        companies.shift()
+        document.write("<br>Campanies after removing first company = ", companies)
+
+        // b) Remove uber and add Ola in its place
+        companies.splice(1, 1, "Ola")
+        document.write("<br>Exchanging Uber with Ola = ", companies)
+
+        // c) Add amazon at the end
+        companies.push("Amazon")
+        document.write("<br>Adding Amazon at the end = ", companies)
+    </script>
+</body>
+</html>
