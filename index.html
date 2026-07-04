@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let a = 10
+let b = 5
+document.write("<br> a = ", a, "<br> b = ", b)
+// Basic arithmetic operations
+document.write("<br>a + b = ", a + b)
+document.write("<br>a - b = ", a - b)
+document.write("<br>a * b = ", a * b)
+document.write("<br>a / b = ", a / b)
+document.write("<br> a % b = ", a % b)
+document.write("<br> a ** b = ", a ** b)
+
+// Unary operators
+document.write("<br> a = ",a)
+a++
+document.write("<br> a++ = ", a++)
+document.write("<br> b = ",b)
+b--
+document.write("<br> b-- = ", b--)
+
+// Assognment operators
+let c = 5
+let d = 2
+c+= 4
+document.write("<br> c += 4 = ", c)
+
+// comparison operators
+let x = 5
+let y = 5
+document.write("<br> x == y is ", x == y)
+document.write("<br> x != y is ", x != y)
+
+document.write("<br> x > y is ", x > y)
+document.write("<br> x < y is ", x < y) 
+document.write("<br> x >= y is ", x >= y)   
+document.write("<br> x <= y is ", x <= y)
+
+// conditions
+let age = 20
+if (age > 18){
+    document.write("<br> You can vote")
+}
+else{
+    document.write("<br> You cannot vote")
+}
+if (age === 20) document.write("<br> You will 21 next year")
+
+// Ternary operator
+let r = 55
+let result = r < 40 ? "You are young" : "You are old"
+document.write("<br>", result)
+
+let l = 17
+let length = l > 20 ? "It is a square" : "It is a rectangle"
+document.write("<br> ", length)
+
+
+// to check whether a number is a multiple of 5 or not
+let num = prompt("Enter a number")
+if(num % 5 == 0){
+    document.write("<br> The number is a multiple of 5")
+}
+else{
+    document.write("<br>The number is not a multiple of 5")
+}
+
+// To check the grade
+let marks = prompt("Enter a number")
+if(marks >= 90){
+    document.write("<br> Grade A+")
+}
+else if(marks <=90 && marks >= 80){
+    document.write("<br> Grade A")
+}
+else if(marks <= 80 && marks >= 70){
+    document.write("<br> Grade B+")
+}
+else if(marks <= 70 && marks >= 60){
+    document.write("<br> Grade B")
+}
+else if(marks <= 60 && marks >= 50){
+    document.write("<br> Grade C+")
+}
+else{
+    document.write("<br> Grade C")
+}
+
+    </script>
+</body>
+</html>
