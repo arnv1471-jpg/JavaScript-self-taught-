@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <script>
+        function myfunction(msg){
+            document.write(msg)
+        }
+        myfunction("I love JS")
+
+        function sum(a, b){
+            s = a + b
+            return s
+        }
+        let value = sum(40, 20)
+        document.write("<br>The sum is ", value)
+
+        // multiplication function
+        function multiply(x, y){
+            m = x * y
+            return m
+        }
+        value = multiply(10, 7)
+        document.write("<br>The product is ", value)
+
+
+        // arrow function
+        const arrowMultiply = (r, l) => {
+           let M = r * l
+        return M
+        }
+        let multiplication = arrowMultiply(19,19)
+        document.write("<br> Arrow is ", multiplication)
+
+        const arrowDivision = (A, R) => {
+            if(A > R){
+                let div = A/R
+                return div
+            }
+            else if(R > A){
+                let div = R/A
+                return div
+            }
+            else{
+                return 1
+            }
+        } 
+        let Division = arrowDivision(80, 80)
+        document.write("<br>Division is ", Division)
+
+        const printHello = () => {
+        return printHello
+        
+        }
+     </script>
+</body>
+</html>
